@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Index</title>
+    <title>Single</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Выберите тип загрузки:</h1>
-    <p><a href="/single">один файл</a></p>
-    <p><a href="/multiple">несколько файлов</a></p>
 
+    <form>
+      Person: <input type="text" name="person" required>
+      <input type="file" name="my-file">
+      <button type="submit">Send</button>
+
+      <div class="answer"></div>
+    </form>
+    
+  
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
     <script src="js/main.js"></script>
   </body>
